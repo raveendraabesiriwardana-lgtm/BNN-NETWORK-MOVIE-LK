@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BNN NETWORK MOVIE LK - CineSubz Edition</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>BNN NETWORK <span>MOVIE LK</span></h1>
+        </div>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="CineSubz Movies සොයන්න..." onkeyup="searchMovies()">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+    </header>
+
+    <!-- Subtitle Banner -->
+    <div class="site-banner">
+        <p><i class="fas fa-film"></i> CineSubz Direct Download Center</p>
+    </div>
+
+    <!-- Movies Grid -->
+    <main class="container">
+        <div id="movieGrid" class="movie-grid">
+            <!-- Dynamic Movie Cards -->
+        </div>
+    </main>
+
+    <!-- Download Modal (Direct Download Pop-up) -->
+    <div id="downloadModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle">Movie Title</h2>
+            <img id="modalPoster" src="" alt="Poster">
+            
+            <p class="modal-subtitle">Direct Download Links Available:</p>
+            <div id="downloadLinksContainer" class="download-links-list">
+                <!-- Direct Links Will Be Inserted Here -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 BNN NETWORK MOVIE LK - Powered by CineSubz</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
